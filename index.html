@@ -23,7 +23,7 @@
             <form class='navbar-form navbar-left' ng-submit="todoCtrl.addTask()">
                 <div class="form-group">
                   <input type='text' ng-model='todoCtrl.item.body'>
-                  Priority: <select ng-model='todoCtrl.item.priority'>
+                  Priority: <select ng-model='todoCtrl.item.priority' ng-init='todoCtrl.item.priority = "3"'>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
